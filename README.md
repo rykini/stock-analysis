@@ -16,8 +16,8 @@ We can tell easily from the color that in 2017, the majority hade a positive gro
 ### Execution time of scripts
 Two different scripts are used to perform the analysis, the original one and the refactored one. The original script loop over the rows 12 times, each time it is looking for data for one ticker. But in the refactored script, since the data is ordered by tickers, we only loop over the rows once, which saves a lot of time, shown below.
 
-![fig1](resources/VBA_Challenge_2017.PNG)
-![fig1](resources/VBA_Challenge_2018.PNG)
+![fig3](Resources/VBA_Challenge_2017.PNG)
+![fig4](Resources/VBA_Challenge_2018.PNG)
 
 
 
