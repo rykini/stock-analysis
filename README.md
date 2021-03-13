@@ -14,7 +14,12 @@ Below is the analysis our macro creates. There are twelve tickers. The 'Total Da
 We can tell easily from the color that in 2017, the majority hade a positive growth, only one ticker ('TERP') had a negative return. Whereas in 2018, only two tickers ('ENPH' and 'RUN') were growing, all the other tickers were having a negative return. 
 
 ### Execution time of scripts
-Two different scripts are used to perform the analysis, the original one and the refactored one. The original script loop over the rows 12 times, each time it is looking for data for one ticker. But in the refactored script, since the data is ordered by tickers, we only loop over the rows once, which saves a lot of time, shown below.
+Two different scripts are used to perform the analysis, the original one and the refactored one. The original script loop over the rows 12 times, each time it is looking for data for one ticker. The execution time is as below.
+
+![fig5](Resources/Original_Time_2017.PNG)
+![fig5](Resources/Original_Time_2018.PNG)
+
+But in the refactored script, since the data is ordered by tickers, we only loop over the rows once, which saves a lot of time, shown below.
 
 ![fig3](Resources/VBA_Challenge_2017.PNG)
 ![fig4](Resources/VBA_Challenge_2018.PNG)
